@@ -1,0 +1,101 @@
+@import "./darkMode/darkMode";
+@import "./variables";
+@import "./Header/header";
+@import "./nav/nav";
+@import "./footer/contacto";
+@import './responsive';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* COL */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-1 {
+    width: 8.33%;
+    margin: auto;
+}
+.col-2 {
+    width: 16.66%;
+    margin: auto;
+}
+.col-3 {
+    width: 25%;
+    margin: auto;
+}
+.col-4 {
+    width: 33.33%;
+    margin: auto;
+}
+.col-5 {
+    width: 41.66%;
+    margin: auto;
+}
+.col-6 {
+    width: 50%;
+    margin: auto;
+}
+.col-7 {
+    width: 58.33%;
+    margin: auto;
+}
+.col-8 {
+    width: 66.66%;
+    margin: auto;
+}
+.col-9 {
+    width: 75%;
+    margin: auto;
+}
+.col-10 {
+    width: 83.33%;
+    margin: auto;
+}
+.col-11 {
+    width: 91.66%;
+    margin: auto;
+}
+.col-12 {
+    width: 100%;
+    margin: auto;
+}
+.col {
+    padding: 0px;
+}
+.goal{/* 
+    justify-content: space-evenly; */
+    align-items: baseline;
+}
+.navigation {
+    transform: translateY(56px);
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 96px;
+}
+h2,h3 {
+    margin-bottom: 40px !important;
+    font-family: $fontHeaders;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 5px $colorPrincipal ;
+}
+.contactoContainer h2{
+    color: white !important;
+    text-shadow: 2px 2px 5px  rgb(0, 0, 0) ;
+}
+p {
+    font-family: $fontCommon;
+}
+.links{
+    font-weight: 600 !important;
+    text-shadow: 2px 2px 5px $colorPrincipal  ;
+}
+
+.disclaimer {
+    display: none !important;
+}

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/header/Header";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Nav from "./components/nav/Nav";
+import Footer from "./components/footer/Footer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ItemDetailContainer from "./components/nav/Servicios/ItemDetailContainer/ItemDetailContainer";/* 
+import ScrollToTop from "./FixScroll"; */
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>{/* 
+        <ScrollToTop> */}
+          <Switch>
+            <Route exact path="/">
+              <Header />
+              <Nav />
+              <Footer />
+            </Route>
+            <Route path="/productos/:id">
+              <ItemDetailContainer />
+            </Route>{/* 
+            <Route path="/404">
+              <NoMatch />
+            </Route> */}
+          </Switch>{/* 
+        </ScrollToTop> */}
+      </Router>
     </div>
   );
 }
 
 export default App;
+

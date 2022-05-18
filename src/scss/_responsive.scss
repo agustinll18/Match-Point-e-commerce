@@ -1,0 +1,225 @@
+@media screen and (max-width: 766px) and(min-width: 280px) and (orientation: portrait) {
+  .container {
+    padding: 0px !important;
+    h1 {
+      font-size: 20px !important;
+      font-weight: bold !important;
+      transform: translateY(4px);
+    }
+  }
+  .carrera {
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    display: inline-block;
+    .men {
+      transform: scale(0.7) !important;
+      margin: 0px !important;
+      width: 100% !important;
+    }
+  }
+  .wrapperCard {
+    margin: auto;
+    width: 90% !important;
+    .product-img {
+      height: 40%;
+      width: 100% !important;
+      img{
+        transform: rotateZ(90deg) scale(0.5,1) translateX(-80%) translateY(-10%) !important;
+
+      }
+    }
+    .product-info {
+      width: 100% !important;
+      .product-text {
+        height: 40% !important;
+        width: 100% !important;
+        p {
+          margin: 0 5% !important;
+          font-size: 12px !important;
+        }
+        .product-sub-title {
+          margin: 0 0 20px 38px !important;
+          text-shadow: none !important;
+        }
+        .product-title {
+          padding-top: 22px !important;
+          font-size: 24px !important;
+        }
+      }
+    }
+    .product-price-btn {
+      height: 70px !important;
+      width: 100%;
+      margin-top: 0px !important;
+      p {
+        top: 0px !important;
+      }
+    }
+  }
+  .contactoContainer{
+    height: 950px !important;
+  }
+  .goal {
+    width: 50% !important;
+    position: relative;
+    left: -100px !important;
+    justify-content: space-between !important;
+  }
+  
+@keyframes bounce {
+  0% {
+      transform: translateY(-450%) rotateY(0deg) translateX(120%);
+  }
+  50% {
+      transform: translateY(-500%) translateX(435%);
+  }
+  100% {
+      transform: translateY(-400%) translateX(750%);
+  }
+}
+  .logos {
+    transform: scale(2.5, 0.75);
+    img {
+      padding-left: 0px;
+      padding-right: 0px !important;
+    }
+  }
+}
+@media screen and (max-width: 766px) and(min-width: 280px) and (orientation: landscape) {
+  .container {
+    padding: 0px !important;
+    h1 {
+      font-size: 20px !important;
+      font-weight: bold !important;
+      transform: translateY(4px);
+    }
+  }
+  .wrapperCard {
+    margin: auto;
+    width: 90% !important;
+    .product-img {
+      height: 40%;
+      width: 100% !important;
+      img{
+        transform: rotateZ(90deg) scale(0.5,1.5) translateX(-80%) translateY(-20%) !important;
+
+      }
+    }
+    .product-info {
+      width: 100% !important;
+      .product-text {
+        height: 40% !important;
+        width: 100% !important;
+        p {
+          margin: 0 5% !important;
+          font-size: 12px !important;
+        }
+        .product-sub-title {
+          margin: 0 0 20px 38px !important;
+          text-shadow: none !important;
+        }
+        .product-title {
+          padding-top: 22px !important;
+          font-size: 24px !important;
+        }
+      }
+    }
+    .product-price-btn {
+      height: 70px !important;
+      width: 100%;
+      margin-top: 0px !important;
+      p {
+        top: 0px !important;
+      }
+    }
+  }
+  .contactoContainer{
+    height: 920px !important;
+  }
+  .goal {
+    width: 40% !important;
+    position: relative;
+    left: -100px !important;
+    justify-content: space-between !important;
+  }
+  
+@keyframes bounce {
+  0% {
+      transform: translateY(-450%) rotateY(0deg) translateX(60%);
+  }
+  50% {
+      transform: translateY(-500%) translateX(435%);
+  }
+  100% {
+      transform: translateY(-400%) translateX(950%);
+  }
+}
+  .logos {
+    transform: scale(2.5, 0.75);
+    img {
+      padding-left: 0px;
+      padding-right: 0px !important;
+    }
+  }
+}
+@media screen and (max-width: 1025px) and (min-width: 767px) /* and (orientation: landscape) */ {
+    .container {
+      padding: 0px !important;
+      h1 {
+        font-size: 20px !important;
+        font-weight: bold !important;
+        transform: translateY(4px);
+      }
+    }
+    .wrapperCard {/* 
+      margin: auto;
+      width: 90% !important; */
+      height: 500px !important;
+      .product-img { 
+        height: 500px;/*
+        width: 100% !important; */
+        img{
+          transform:   translate(-15%,0%)  !important;
+          height: 100% !important;
+        }
+      }
+      .product-price-btn {
+        height: 70px !important;
+        transform: translate(15%,200%);
+        width: 100%;
+        margin-top: 0px !important;
+        p {
+          transform: translate(-70%,30%)
+        }
+      }
+    } 
+    .contactoContainer{
+      height: 900px !important;
+    }
+    .goal {
+      width: 30% !important;
+      position: relative;
+      left: -100px !important;
+      justify-content: space-between !important;
+    }
+    
+  @keyframes bounce {
+    0% {
+        transform: translateY(-450%) rotateY(0deg) translateX(10%);
+    }
+    50% {
+        transform: translateY(-500%) translateX(435%);
+    }
+    100% {
+        transform: translateY(-400%) translateX(1150%);
+    }
+  }
+    .logos {
+      transform: scale(1.5, 1);
+      img {
+        padding-left: 0px;
+        padding-right: 0px !important;
+      }
+    }
+  }

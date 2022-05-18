@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box !important;
+}
+/* PLAYERS  */
+.P1 {
+    width: 60px;
+    height: 200px;
+    display: block;
+    position: relative;
+    .head {
+        width: 90%;
+        height: 30%;
+        border: 5px solid black;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 21px;
+        left: 1px;
+        z-index: 20;
+    }
+
+    .torso {
+        width: 6px;
+        height: 30%;
+        border: 3px solid black;
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+
+    .leftleg {
+        width: 6px;
+        height: 30%;
+        border: 3px solid black;
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        transform: rotate(12deg);
+        transform-origin: top;
+    }
+
+    .rightleg {
+        width: 6px;
+        height: 30%;
+        border: 3px solid black;
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        transform: rotate(-12deg);
+        transform-origin: top;
+    }
+
+    .rightarm {
+        width: 80%;
+        height: 6px;
+        border: 3px solid black;
+        display: block;
+        position: absolute;
+        top: 86px;
+        left: 35%;
+        animation: swing 1s alternate infinite;
+        transform-origin: 0%;
+        transform: rotateX(55deg) rotateZ(180deg);
+        z-index: 1;
+        .raqueta {
+            transform: rotateY(180deg) translateX(-60%) translateY(-95%);
+        }
+    }
+}
+@keyframes swing {
+    0% {
+        transform: rotate(-5deg) rotateX(-40deg) /*  ease-out; */;
+        animation-timing-function: cubic-bezier(0.87, 0, 1, 1);
+    }
+    50% {
+        transform: rotateX(0deg) rotate(41deg);
+    }
+    100% {
+        transform: rotate(80deg) rotateX(-60deg);
+        animation-timing-function: cubic-bezier(0, 1.03, 1, 1);
+    }
+} /* PLAYER 2 */
+.P2 {
+    width: 60px;
+    left: 90%;
+    height: 200px;
+    display: block;
+    position: relative;
+    transform: rotateY(180deg);
+    .head {
+        width: 90%;
+        height: 30%;
+        border: 5px solid black;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 21px;
+        left: 1px;
+        z-index: 1;
+    }
+
+    .torso {
+        width: 6px;
+        height: 30%;
+        border: 3px solid black;
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+
+    .leftleg {
+        width: 6px;
+        height: 30%;
+        border: 3px solid black;
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        transform: rotate(12deg);
+        transform-origin: top;
+    }
+
+    .rightleg {
+        width: 6px;
+        height: 30%;
+        border: 3px solid black;
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        transform: rotate(-12deg);
+        transform-origin: top;
+    }
+
+    .rightarm {
+        width: 80%;
+        height: 6px;
+        border: 3px solid black;
+        display: block;
+        position: absolute;
+        top: 86px;
+        left: 35%;
+        animation: swing 1s alternate infinite;
+        transform-origin: 0%;
+        animation-delay: 0.5s;
+        transform: rotateX(55deg) rotateZ(-40deg);
+        z-index: 1;
+        img {
+            transform: rotateY(180deg) translateX(-60%) translateY(-95%);
+        }
+    }
+}
+/* BALL BOUNCE */
+.ball {
+    animation: bounce 1s alternate infinite !important ;
+    position: relative;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-450%) rotateY(0deg) translateX(120%);
+        animation-timing-function: ease-in/* cubic-bezier(0, 1.14, 0.63, 0.99); */
+    }
+    50% {
+        transform: translateY(-600%) translateX(2100%);
+    }
+    100% {
+        transform: translateY(-350%) translateX(4150%);
+        animation-timing-function: ease-out;
+    }
+}
+
+.net {
+    width: 40px;
+    position: relative;
+    left: 45%;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    transform-origin: bottom;
+    clip-path: polygon(0% 0%, 100% 6.3%, 100% 100%, 0% 100%);
+    justify-content: space-evenly;
+    align-items: baseline;
+    .grid {
+        width: 80%;
+        height: 90%;
+        position: relative;
+        top: 10%;
+        margin: auto;
+        clip-path: polygon(0% 0%, 100% 6.3%, 100% 100%, 0% 100%);
+        background-image: linear-gradient(#2f2f2f 1.5px, transparent 1.5px),
+            linear-gradient(to right, #2f2f2f 1.5px, transparent 1.5px);
+        background-size: 4px 4px;
+        background-color: #fdfdfd;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../variables';
+
+.brandN{
+    color:#333;
+    font-weight:bold;
+    font-family: $fontHeaders;
+    transition: all .75s ease-in-out;
+    text-shadow: 0px 0px 26px rgb(0, 0, 0);
+    font-size: 26px;
+}
+#navLinks{
+    margin: 0px !important;
+    align-self: flex-end !important;
+    justify-content: flex-end !important;
+}
